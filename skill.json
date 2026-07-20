@@ -1,0 +1,31 @@
+{
+  "name": "genpark-chatcut-nl-video-editor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - ChatCut-like natural language video editing instruction planner.",
+  "author": "genpark",
+  "category": "creative",
+  "tags": [
+    "video",
+    "editing",
+    "natural-language",
+    "chatcut"
+  ],
+  "inputs": {
+    "edit_instruction": {
+      "type": "string"
+    },
+    "video_duration_sec": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "edit_operations": {
+      "type": "array"
+    },
+    "export_format": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
